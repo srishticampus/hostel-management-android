@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".VisitorPassActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4FAEBE"
+            android:elevation="10dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:progressTint="@color/background_bg" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/visitor_pass_form_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Visitor Form"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/visi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visitor_pass_form_tv"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/visi_pass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/visi_name"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/et_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/username_icon" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <EditText
+                android:id="@+id/visitor_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Visitor's name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/visi_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visi_pass_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Relationship"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/visi_pass_rel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/visi_rel"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/et_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/username_icon" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <EditText
+                android:id="@+id/visitor_relation_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Relationship to resident"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Time"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_below="@id/time_"
+            android:background="@drawable/et_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/time_icon" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Time of visit"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visi_pass_rel_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Date"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_below="@id/date_"
+            android:background="@drawable/et_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/date_range_24" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Date of visit"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/visitor_pass_bt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/time_layout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/white_btn_bg"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textFontWeight="800"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

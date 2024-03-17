@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_bg">#fff</color>
+    <color name="primary_txt_color">#000</color>
+    <color name="red">#E53935</color>
+    <color name="primary_fil">#43A047</color>
+    <color name="background_bg">#005B6A</color>
+    <color name="orange">#E39900</color>
+    <color name="grey">#A49E9E</color>
+    <color name="your_unchecked_color">#000</color>
+    <color name="your_checked_color">#ffff</color>
+</resources>

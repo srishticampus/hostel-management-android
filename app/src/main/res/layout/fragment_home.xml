@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_img_iv"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@id/user_img_iv"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="UserName" />
+
+        <ImageView
+            android:id="@+id/attendance_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/user_img_iv"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/attendance_img" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/attendance_bt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/attendance_iv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/white_btn_bg"
+            android:gravity="center"
+            android:text="Mark My Attendance"
+            android:textAllCaps="false"
+            android:textFontWeight="800"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/out_pass_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attendance_bt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="OutPass"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/out_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/out_pass_tv"
+            android:layout_centerHorizontal="true"
+            android:text="Generate an outpass to leave the hostel"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/outpass_bt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/out_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/white_btn_bg"
+            android:gravity="center"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textFontWeight="800"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/visitor_pass_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outpass_bt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Visitor Pass"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/visitor_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visitor_pass_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="24dp"
+            android:text="You can generate a visitor pass for your guest in just a few steps."
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/visitor_pass_bt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/visitor_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/white_btn_bg"
+            android:gravity="center"
+            android:text="Generate Pass"
+            android:textAllCaps="false"
+            android:textFontWeight="800"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
